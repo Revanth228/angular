@@ -1,0 +1,80 @@
+<div class="div1"> <h1>SRG</h1></div>
+<div class="div2"> 
+    <ul>
+        
+         <li><button  (click)="Onfunction(1)" >Role</button></li> 
+         <li></li>
+        <li><button  (click)="Onfunction(2)" >Dashboard</button></li>
+        <li></li>
+        <li><button  (click)="Onfunction(3)" >User</button></li>
+        <li></li>
+        <li>Walmart</li>
+        <li><button (click)="Onfunction(4)">Walmart Rpt 1</button></li> 
+         
+        <li><button (click)="Onfunction(5)">Walmart Rpt 2</button></li>
+        <li></li>
+        <li>Target</li>
+        <li><button>Target Rpt 1</button></li> 
+         
+        <li><button>Target Rpt 2</button></li>
+        <li class="rev"><button (click)="logout()">LogOut</button></li>
+    </ul>
+</div>
+
+    <h1>hello</h1> 
+    <div class="div3" >
+        <table border="1px" id = "displaytable1" style="display:none">
+            <tr>
+                <th *ngFor = "let column of headers">
+                    {{column}}
+                  </th>
+        </tr>
+        <tr *ngFor = "let row of rows">
+            <td *ngFor = "let column of headers">
+              {{row[column]}}
+            </td>
+          </tr>
+    </table>
+    </div>
+    <div class="div4" >
+        <table border="1px" id = "displaytable2" style="display:none">
+            <tr>
+                <th *ngFor = "let column of headers1">
+                    {{column}}
+                  </th>
+        </tr>
+        <tr *ngFor = "let row of rows1">
+            <td *ngFor = "let column of headers1">
+              {{row[column]}}
+            </td>
+          </tr>
+    </table>
+    </div>
+    <div class="div5" >
+        <table border="1px" id = "displaytable3" style="display:none">
+            <tr>
+                <th *ngFor = "let column of headers2">
+                    {{column}}
+                  </th>
+        </tr>
+        <tr *ngFor = "let row of rows2">
+            <td *ngFor = "let column of headers2">
+              {{row[column]}}
+            </td>
+          </tr>
+    </table>
+    </div>
+    <div class="div6">
+      <div id="displaytable4" style="display:none">
+      <img [src]=myimage1 alt="Forest" width="600" height="400">
+  </div>
+  </div>
+  <div class="div7" style.display="none">
+      <div id="displaytable5" style="display:none">
+          <img [src]=myimage2 alt="Forest1" width="800" height="400" >
+      </div>
+  </div>
+
+
+
+
